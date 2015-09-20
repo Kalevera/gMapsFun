@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar {
+width: 0 !important;
+height: 0 !important
+}
+
+/*Title Bar Background*/
+header{
+    width:         100%;
+    height:         34px;
+    background:    #005CE6 ;
+    border-bottom: 2px solid #0040A1;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    }
+
+/*------Top of page (index.html) Version 0.00.5 Alpha -----*/
+/*Window Controls styles*/
+header>div>ul{
+    text-align: right;
+    line-height:  0;
+    padding-left: 6px;
+    }
+header>div>ul>li,
+header>div>ul>li>a{
+    display: inline-block;
+    }
+
+    /* ------ map panel button ----- */
+      #panel {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: 0px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 0px;
+        border: 0px;
+      }
+
+.menu_btn{
+    text-align:   left;
+    float: left;
+    top: 0px;
+    left: 0px;
+}
+/* Google Maps Map Canvas Div*/
+
+#map-canvas{
+    height:575px;  /*This is required in order to make the map actually render without a height specified it will not render the map*/
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Body Page Menu Buttons and Nav*/
+a#menu_open{
+    text-align: left;
+    width:              22px;
+    height:             22px;
+    margin:              6px 6px 6px 0;
+    background-image:   url('./img/menu.svg');
+    -webkit-background-size: 100%;    
+    background-repeat:  no-repeat;
+    -webkit-transition: -webkit-transform 50ms;
+    -webkit-app-region: no-drag;
+    }
+/* Navigation Menu button and transform*/
+.menu_close:hover,
+.menu_close:focus{
+    -webkit-transform:  scale(1.22,1.22);
+    outline:            none;
+    }
+.menu_close{
+    top: 0px;
+    width:              22px;
+    height:             22px;
+    margin:              6px 6px 6px 0;
+    background-image:   url('./img/menu1.svg');
+    -webkit-background-size: 100%;
+    background-repeat:  no-repeat;
+    -webkit-transition: -webkit-transform 50ms;
+    -webkit-app-region: no-drag;
+    
+    }
+
+/* this causes the menu buttons to transform when hovered over*/
+header>div>ul>li>a:hover,
+header>div>ul>li>a:focus{
+    -webkit-transform:  scale(1.22,1.22);
+    outline:            none;
+    }
+
+body>div>ul>a:hover,
+body>div>ul>a:focus,
+
+/*Navigation Styling and Hover and Focus Effects*/
+
+.menu{
+    position: fixed;
+    top: 0px;
+    left:-215px;
+    width:215px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 15px;
+    text-transform: uppercase;
+    }
+
+
+/*-----Body Background-----*/
+body{
+    left:0px;
+    margin: 0px;
+    overflow: visible;
+    position: relative;
+    background: -webkit-linear-gradient( white,#0040A1 );
+
+    }
+/*-----Body Styling-----*/
+section#mainPagebody{
+    padding: :10px;
+    margin: 10px;
+    }
+/*----article styling----*/
+article{
+    color: white;
+    padding: 10px;
+    padding-bottom: 25px;
+    background: #005CE6;
+
+    }
+/*-----SubHeadings 2-----*/
+h2{
+    background: #0040A1;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px white;
+    }
+p{
+    border-radius:0px;
+}
+
+
+/*-----footer------*/
+footer#pageFooter{
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+}

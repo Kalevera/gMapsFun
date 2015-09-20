@@ -1,0 +1,26 @@
+//
+//     Field Notes web browser and desktop app
+//     Version 0.0.55  (2/16/2014)
+//
+//
+{
+	"main": "index.html",
+	"name": "field-notes",
+	"js-flags": "--harmony_proxies --harmony_collections",
+	"maintainers":
+		[{
+		"author": "The One Ravenous",
+		"name": "gmapsExmpl",
+		"twitter" : "@TheOneRavenous",
+		"Description":"Google Maps Examples"
+		}],
+	"license":[{
+		"type":"GNU GPL V.2.0",
+		"url": "http://www.gnu.org/licenses/gpl-2.0.txt"
+		}],
+
+	"repositories":[{
+		"type":"git",
+		"url": "https://github.com/Kalevera/gMapsFun.git"
+		}]
+}

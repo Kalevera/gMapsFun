@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>gmap Exmpl</title>
+    <link rel='stylesheet' href='./style.css'>
+
+    </head>
+<body>
+
+    <header>
+
+<!--______________ Body Title Bar "Header" controls____________ -->
+     <div class='window'>  
+            <ul>
+                <li><a href='#' title='menuOpen'    id='menu_open'   ></a></li>
+            </ul>
+        </div>
+</header>   
+
+<!--_____________ Navigation Menu ___________ -->
+    <div class="menu" >
+        <ul href='#' id='menu_links'>   
+            <!--______ menu button Close________-->
+            <div class='menu_close'>
+            <li><a href='#' data-title='menuClose' id='menu_c'></a></li>
+            </div>
+        <ul>
+    </div>
+
+<!--_____________ Body _________________ -->
+    <div id="panel" style="margin-left: -52px">
+      <button id="drop" onclick="polyOn()">Draw A Polygon</button>
+      <button id="clearMap" onclick="clearMap()">Clear Map</button>
+      <button id="currentLoc" onclick="customFunction()">Custom Button</button>
+     </div>
+    <div id="map-canvas" ></div>
+        
+<!--_____________ Infromation _________________ -->
+    <div class='projects'>
+        <article>
+        <!--  information heading -->            
+            <h2 id='articleProjects'>Information about this maps example</h2>
+            <article>
+            <p>
+                  This example provided by Roberto Vega reach out to me on twitter if you have questions <a href='https://twitter.com/theoneravenous'>@TheOneRavenous </a> or open an issue request on <a href='https://github.com/Kalevera/gMapsFun'>github</a> repo
+            </p>
+            <p>
+                This example requires you to apply for your own <a href='https://developers.google.com/maps/documentation/javascript/tutorial#api_key'>API key</a>, you then place that key in the html document under scripts at the bottom of the page
+                then place API key in the URL of the src where Key = YOURKEY
+            </p>
+            </article>  
+        </article>
+    </dvi>
+    <div id='output' class='output'>
+    <p href='#'id='demo'></p>
+  </div>
+    
+<!--_____________ footer ______________-->
+
+    <footer id ='pageFooter'>
+      
+    </footer>
+
+    </body>
+
+  <!--****************************************
+      *________________Maps__________________*
+      ****************************************-->
+
+      <!--
+      this requires an API key to use request your API key at  is completed this will switch to work API and a new liscence will need to be reevaluated. 
+    -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOURKEY">
+</script>
+<script type="text/javascript" src="gmapExmpl.js">
+</script>
+
+
+</html>
