@@ -215,3 +215,21 @@ function handleNoGeolocation(errorFlag) {
 
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+var markers = [];
+
+/* Inside marker loop */
+markers.push(marker);
+
+/* Marker click function */
+function myClick(id)
+{
+  google.maps.event.trigger(markers[id], 'click');
+}
+
+/* Outside link to specific marker (number) */
+<a href="#" onclick="myClick(0);">Name of Marker here</a>
+
+
+
