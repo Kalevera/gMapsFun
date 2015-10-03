@@ -1,11 +1,10 @@
 # gMapsFun
 ##About this Repo
 This is a google maps example showing some random functions, event listeners and custom markers.
-It also show cases some map center function, click functions, and custom styling.
-I generated this because alot of the docs on Google Dev sites don't function and i wanted a place 
-for people to easily interact with google maps
+map center function, click functions, and custom styling, additoinal map control buttons.
+I generated this repo to have a place for people to easily interact with google maps on their local machine
 
-## Goal os this repo was to show a friend some google maps features.
+## Goal of this repo was to show a friend some google maps features.
 * Marker on click event will center map
 * On click map event will create a Marker at location clicked.
 * Show custom Buttons, three are in this example (draw polygon, clear map, custome button)
