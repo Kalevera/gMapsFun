@@ -231,5 +231,5 @@ function myClick(id)
 /* Outside link to specific marker (number) */
 <a href="#" onclick="myClick(0);">Name of Marker here</a>
 
-
+// Some more code here for pull request.
 
